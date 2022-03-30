@@ -1,0 +1,51 @@
+#-------------------------------------------------
+# Data file for numerical integration.
+#-------------------------------------------------
+
+[ZeroFun]
+	
+	sol_ex = -0.2206356  # Leave it empty if the exact solution is not available or not needed
+	
+	tol = 1e-5
+	maxIt = 200
+	
+	[./Bisection]
+		a=0.0
+		b=2.0
+		maxIt_interval = 200
+		h_interval = 0.1
+    [../]
+    
+   	[./RegulaFalsi]
+   		a=-2.0
+		b=0.0
+   		tola = 1e-10
+   		maxIt_interval = 200
+		h_interval = 0.1
+    [../]
+    
+    [./Brent]
+    	a=-1.0
+		b=-2.0
+		maxIt_interval = 200
+		h_interval = 0.1
+	[../]
+    
+    [./Secant]
+		a = -1.0
+		b = 0.0
+		tola = 1e-10
+    [../]
+    
+   	[./QuasiNewton]
+		x = 0.0
+		h = 1e-2
+		tola = 1e-10
+    [../]
+    
+    [./Newton]
+		x = 0.0
+		tola = 1e-10
+    [../]
+    
+[../]
