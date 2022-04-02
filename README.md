@@ -11,6 +11,7 @@ This program allow the user to choose between different numerical methods in ord
 	f) QuasiNewton.
 
 The following parameters are taken in input from command line thanks to GetPot:
+
 	a) method	= name of the wanted method
 	   (valid values: "Bisection", "RegulaFalsi", "Brent", "Secant", "Newton", "QuasiNewton");
 	   
