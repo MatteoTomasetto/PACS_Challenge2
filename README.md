@@ -1,4 +1,4 @@
-# Code to compute the zero of a function #
+# Solvers to compute the zero of a function #
 
 This program computes the zero of a function. In particular it considers f(t,y) = 0.5 - exp(M_PI * x).
 
